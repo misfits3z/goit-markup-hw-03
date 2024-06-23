@@ -74,7 +74,9 @@
 .cloud-color{
     color: var(--cloud);
 }
-
+.contacts-color{
+    color: var(--slate);
+}
 /* styles */
 
 .no-markers{
@@ -195,8 +197,13 @@ img {
     padding: 24px 0;
     font-weight: 500;
 }
+.flex{
+    display: flex;
+    align-items: center;
+}
 .contacts{
-    display: flex;   
+    margin-left: auto;
+    
 }
 .contacts-list{
     display: flex;
