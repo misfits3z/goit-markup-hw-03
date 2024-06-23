@@ -21,7 +21,6 @@
     background-color: var(--white);
     }
 .header-color{
-    color: var(--cornflower);
     background-color: #FFFFFF;
 }
 .logo-color{
@@ -176,7 +175,7 @@ img {
 	max-width: 100%;
 }
 .header{
-    border-bottom: 1px solid var(--corn-flower);
+    border-bottom: 1px solid var(--cornflower);
 }
 .container {
     max-width: 1158px;
