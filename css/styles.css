@@ -244,7 +244,7 @@ img {
 }
 .hero-img{
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero\ image-2.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
     background-position: center;
     max-width: 1440px;
     background-size: cover;
