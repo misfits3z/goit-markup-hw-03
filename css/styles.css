@@ -239,6 +239,13 @@ img {
 .info-item{
     flex-basis: calc((100% - 72px) / 4);
 }
+.hero-img{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero\ image-2.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+}
 
 
 .section-features{
@@ -258,6 +265,20 @@ img {
 }
 .headline-bottom{
     margin-bottom: 8px;
+}
+.icon{
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
+}
+.icon svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -294,6 +315,41 @@ img {
   .text-position{
     text-align: center
 }
+.social-links{
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.icon-size{
+    height: 40px;
+    width: 40px;
+}
+.fill{
+    fill: var(--cloud);
+}
+
+
+.icon-team{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris);
+    gap: 24px;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-team:hover{
+    background-color: var(--ocean);
+}
+
+.icon-team:focus{
+    background-color: var(--ocean);
+}
 
 
 
@@ -315,6 +371,11 @@ img {
   .portfolio-item{
     flex-basis: calc((100% - 48px) / 3);
   }
+  .portfolio-item:hover{
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
+                0 1px 1px rgba(46, 47, 66, 0.16),
+                0 2px 1px rgba(46, 47, 66, 0.08);
+  }
   .portfolio-card{
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
@@ -325,6 +386,37 @@ img {
   }
   .portfolio-item:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+.transition{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-transition{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.transition-shadow{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-container{
+    position: relative;
+    overflow: hidden; 
+}
+.hover-text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--cloud);
+    padding: 40px 32px;
+    background-color:var(--iris);
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover .hover-text{
+    transform: translateY(0%);
+    color: #fff;
 }
 
 
@@ -338,39 +430,53 @@ img {
 .footer-text{
     max-width: 264px;
 }
-
-
-.hero-img{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero\ image-2.jpg);
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;
-}
-.icon{
-    background-color: var(--cloud);
-    border: 1px solid var(--light-slate);
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    height: 112px;
-}
-.icon svg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-links{
-    justify-content: center;
-    gap: 24px;
-    margin-top: 8px;
-}
-.icon-size{
-    height: 40px;
+.icon-footer{
+    border-radius: 50%;
     width: 40px;
+    height: 40px;
+    background-color: var(--iris);
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-.fill{
-    fill: var(--cloud);
+.social-text{
+    color: var(--white);
+    margin-bottom: 16px;
+    font-weight: 500;
+    justify-content: center;
 }
+.footer-social-links{
+    justify-content: center;
+    gap: 16px;
+}
+.footer-style{
+    align-items: baseline
+}
+.footer-logo-block{
+    margin-right: 120px;
+}
+.icon-footer:hover{
+    background-color: var(--green);
+}
+.icon-footer:focus{
+    background-color: var(--green);
+}
+
+.selected::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color:var(--ocean);
+    border-radius: 2px;
+}
+.currently{
+    position: relative;
+    color: var(--ocean);
+}
+
