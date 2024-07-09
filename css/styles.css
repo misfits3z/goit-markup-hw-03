@@ -550,6 +550,7 @@ img {
     position: fixed;
     background-color: rgba(46, 47, 66, 0.4);
     justify-content: center;
+    align-items: center;
     top: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* приховати */
@@ -588,19 +589,15 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover{
+.close-btn:hover,
+.close-btn:focus {
     background-color: var(--ocean);
 }
-.close-btn:focus{
-    background-color: var(--ocean);
-    border: none;
-}
-.close-btn:hover svg{
-    fill: var(--white);
-}
+.close-btn:hover svg,
 .close-btn:focus svg{
     fill: var(--white);
 }
+
 .modal-caption {
     margin-bottom: 16px;
     text-align: center;
@@ -660,6 +657,7 @@ img {
     left: 16px;
     transform: translateY(-50%);
     fill: var(--navy-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon-input:focus-within .modal-form-input{
     border-radius: 4px;
@@ -669,9 +667,7 @@ img {
     fill: var(--iris);
 }
 
-.icon-transition{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .text-field{
     height: 120px;
     width: 100%;
@@ -717,7 +713,7 @@ img {
 .placeholder-text{
     
     letter-spacing: 0.04em;
-    color: var(--navy-blue-modal);
+    color: var(--light-slate);
 }
 .policy{
     margin-left: 0.3em;
@@ -725,19 +721,20 @@ img {
 }
 
 .btn-modal{
-    border: 0;
+    border: none;
     background-color: var(--iris);
     color: var(--white);
     cursor: pointer;
-    display: block;
+    display: flex;
     min-width: 169px;
     height: 56px;
     border-radius: 4px;
     margin: 24px auto 0;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-modal:hover{
-    background-color: var(--ocean);
-}
+.btn-modal:hover,
 .btn-modal:focus{
     background-color: var(--ocean);
 }
