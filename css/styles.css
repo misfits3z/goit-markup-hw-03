@@ -690,7 +690,7 @@ img {
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
-    color: rgba(46, 47, 66, 0.4);
+    color: rgba(46, 47, 66, 0.4); 
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -698,9 +698,9 @@ img {
     outline: transparent; 
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
-
-
+}
+.text-field:focus{
+    border-color: var(--iris);
 }
 .checkbox-container{
     margin-bottom: 24px;
@@ -747,6 +747,7 @@ img {
 
 .btn-modal{
     border: none;
+    display: block;
     background-color: var(--iris);
     color: var(--white);
     cursor: pointer;
@@ -757,7 +758,7 @@ img {
     margin: 24px auto 0;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .btn-modal:hover,
 .btn-modal:focus{
